@@ -21,40 +21,128 @@
     </script>
 
     <style type="text/css">
+        .form-check {
+            margin-right: 20px;
+        }
 
+        #dniw {
+            visibility: hidden;
+        }
+
+        #dni:checked #dniw {
+            visibility: visible;
+        }
+
+        .niew {
+            visibility: hidden;
+        }
+
+        .nie:checked .niew {
+            visibility: visible;
+        }
     </style>
 </head>
 
 <body>
     <header></header>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black">
         <div class="container-fluid">
-            <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+            <a class="navbar-brand" href="inicio.html"><img src="../img/logo2.png" width="65px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                        <a class="nav-link" href="#horario">Horarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                        <a class="nav-link" href="#entrenador">Entrenadores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="text" placeholder="Search">
-                    <button class="btn btn-primary" type="button">Search</button>
+                    <a href="#formulario"><button class="btn btn-success" type="button"> Date de alta</button></a>
                 </form>
             </div>
         </div>
     </nav>
 
-    <main></main>
+    <main>
+        <article id="horario">
+
+        </article>
+
+        <article id="entrenador">
+
+        </article>
+
+        <article id="contacto">
+
+        </article>
+
+        <div id="formulario">
+            <form action="#">
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Introduzca su e-mail" name="email"
+                        required>
+                </div>
+
+                <div class="d-flex flex-row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="hombre">
+                        <label class="form-check-label">Hombre</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check2" name="option2" value="mujer">
+                        <label class="form-check-label">Mujer</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check3" name="option3" value="nb">
+                        <label class="form-check-label">No binario</label>
+                    </div>
+                </div><br />
+
+                <h6>Tipo de pago</h6>
+
+                <select class="form-select">
+                    <option>Anual</option>
+                    <option>Trimestral</option>
+                    <option>Mensual</option>
+                </select><br />
+
+                <div class="d-flex flex-row">
+                    <div class="d-flex flex-column">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dni" name="dni" value="dni">
+                            <label class="form-check-label" for="dni">DNI</label>
+                        </div>
+
+                        <div class="mb-3 mt-3" id="dniw">
+                            <label for="dnie">DNI</label>
+                            <input type="text" name="dniw" id="dnie">
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column">
+                        <div class="form-check nie">
+                            <input class="form-check-input" type="checkbox" id="nie" name="nie" value="nie">
+                            <label class="form-check-label">NIE</label>
+                        </div>
+
+                        <div class="mb-3 mt-3 niew">
+                            <label for="nieimp">DNI</label>
+                            <input type="text" name="niew" id="nieimp">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
 
     <footer></footer>
 </body>
