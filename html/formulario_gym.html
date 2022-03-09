@@ -16,22 +16,6 @@
         .form-check{
             margin-right: 20px;
         }
-
-        .dniw{
-            visibility: hidden;
-        }
-
-        .dni:checked .dniw{
-            visibility: visible;
-        }
-
-        .niew{
-            visibility: hidden;
-        }
-
-        .nie:checked .niew{
-            visibility: visible;
-        }
     </style>
 
 </head>
@@ -44,17 +28,17 @@
 
         <div class="d-flex flex-row">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="check1" name="option1" value="hombre">
-                <label class="form-check-label">Hombre</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="check2" name="option2" value="mujer">
-                <label class="form-check-label">Mujer</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="check3" name="option3" value="nb">
-                <label class="form-check-label">No binario</label>
-            </div>
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" required>Hombre
+                <label class="form-check-label" for="radio1"></label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" required>Mujer
+                <label class="form-check-label" for="radio2"></label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" required>No binario
+                <label class="form-check-label"></label>
+              </div>
         </div><br/>
 
         <h6>Tipo de pago</h6>
