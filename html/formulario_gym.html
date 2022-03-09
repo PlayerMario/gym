@@ -59,37 +59,19 @@
 
         <h6>Tipo de pago</h6>
 
-        <select class="form-select">
+        <select class="form-select" required>
             <option>Anual</option>
             <option>Trimestral</option>
             <option>Mensual</option>
         </select><br/>
 
-        <div class="d-flex flex-row">
-            <div class="d-flex flex-column">
-                <div class="form-check dni">
-                    <input class="form-check-input" type="checkbox" id="dni" name="dni" value="dni">
-                    <label class="form-check-label">DNI</label>
-                </div>
-
-                <div class="mb-3 mt-3 dniw">
-                    <label for="dniimp">DNI</label>
-                    <input type="text" name="dniw" id="dniimp">
-                </div>
-            </div>
-            
-            <div class="d-flex flex-column">
-                <div class="form-check nie">
-                    <input class="form-check-input" type="checkbox" id="nie" name="nie" value="nie">
-                    <label class="form-check-label">NIE</label>
-                </div>
-
-                <div class="mb-3 mt-3 niew">
-                    <label for="nieimp">DNI</label>
-                    <input type="text" name="niew" id="nieimp">
-                </div>
-            </div>
+        <div class="mb-3 mt-3">
+            <label for="dniNie">DNI/NIE</label>
+            <input type="text" name="dniNie" id="dniNie" required maxlength="9" minlength="9">
         </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
     </form>
 </body>
 </html>
