@@ -29,15 +29,32 @@
             text-align: center;
         }
 
+        nav {
+            position: fixed;
+            z-index: 1;
+        }
+
+        div>img {
+            margin: 5px auto;
+        }
+
+        #carousel {
+            width: 70%;
+            margin: 0 auto;
+        }
+
         #horario,
         #entrenador,
-        #contacto {
+        #contacto,
+        #formulario {
+            height: 0px;
             visibility: hidden;
         }
 
         #horario:target,
         #entrenador:target,
-        #contacto:target {
+        #contacto:target,
+        #formulario:target {
             visibility: visible;
         }
     </style>
@@ -72,6 +89,39 @@
     </nav>
 
     <main>
+        <article id="carousel">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicador de posición -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- Imágenes -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/gym1.jpg" alt="Máquinas gimnasio" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/gym2.jpg" alt="Pesas" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/gym3.jpeg" alt="Pistas de pádel" class="d-block" style="width:100%">
+                    </div>
+                </div>
+
+                <!-- Botón de izquierda / derecha -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </article>
+
         <article id="horario">
             <table class="table table-hover">
                 <thead>
@@ -145,14 +195,45 @@
         </article>
 
         <article id="entrenador">
-
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="../img/viyuela.jpg" alt="Tarjeta José Viyuela" style="width:95%">
+                <div class="card-body">
+                    <h4 class="card-title">José Viyuela</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="../img/miya.jpg" alt="Tarjeta Hidetaka Miyazaki" style="width:95%">
+                <div class="card-body">
+                    <h4 class="card-title">Hidetaka Miyazaki</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="../img/rowan.jpg" alt="Tarjeta Rowan Atkinson" style="width:95%">
+                <div class="card-body">
+                    <h4 class="card-title">Rowan Atkinson</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="../img/sanchez.jpg" alt="Tarjeta Pedro Sánchez" style="width:95%">
+                <div class="card-body">
+                    <h4 class="card-title">Pedro Sánchez</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
         </article>
 
         <article id="contacto">
 
         </article>
 
-        <div id="formulario">
+        <article id="formulario">
             <form action="#">
                 <div class="mb-3 mt-3">
                     <label for="email" class="form-label">Email:</label>
@@ -193,7 +274,7 @@
                 <button type="submit" class="btn btn-primary">Enviar</button>
 
             </form>
-        </div>
+        </article>
     </main>
 
     <footer></footer>
