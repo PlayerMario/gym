@@ -43,6 +43,7 @@
             margin: 0 auto;
         }
 
+        #inicio,
         #horario,
         #entrenador,
         #contacto,
@@ -51,6 +52,7 @@
             visibility: hidden;
         }
 
+        #inicio:target,
         #horario:target,
         #entrenador:target,
         #contacto:target,
@@ -61,9 +63,11 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="container-fluid bg-black">
+        <a href="#inicio"><img src="../img/logogif.gif" width="100%" alt="Logo GYM" /></a>
+    </header>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+    <nav class="container navbar navbar-expand-sm navbar-dark bg-black">
         <div class="container-fluid">
             <a class="navbar-brand" href="inicio.html"><img src="../img/logo2.png" width="65px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -88,7 +92,7 @@
         </div>
     </nav>
 
-    <main>
+    <main class="container" id="inicio">
         <article id="carousel">
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -194,8 +198,8 @@
             </table>
         </article>
 
-        <article id="entrenador">
-            <div class="card" style="width:300px">
+        <article class="row" id="entrenador">
+            <div class="col-sm card" style="width:300px">
                 <img class="card-img-top" src="../img/viyuela.jpg" alt="Tarjeta José Viyuela" style="width:95%">
                 <div class="card-body">
                     <h4 class="card-title">José Viyuela</h4>
@@ -203,7 +207,7 @@
                     <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
             </div>
-            <div class="card" style="width:300px">
+            <div class="col-sm card" style="width:300px">
                 <img class="card-img-top" src="../img/miya.jpg" alt="Tarjeta Hidetaka Miyazaki" style="width:95%">
                 <div class="card-body">
                     <h4 class="card-title">Hidetaka Miyazaki</h4>
@@ -211,7 +215,7 @@
                     <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
             </div>
-            <div class="card" style="width:300px">
+            <div class="col-sm card" style="width:300px">
                 <img class="card-img-top" src="../img/rowan.jpg" alt="Tarjeta Rowan Atkinson" style="width:95%">
                 <div class="card-body">
                     <h4 class="card-title">Rowan Atkinson</h4>
@@ -219,7 +223,7 @@
                     <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
             </div>
-            <div class="card" style="width:300px">
+            <div class="col-sm card" style="width:300px">
                 <img class="card-img-top" src="../img/sanchez.jpg" alt="Tarjeta Pedro Sánchez" style="width:95%">
                 <div class="card-body">
                     <h4 class="card-title">Pedro Sánchez</h4>
@@ -277,7 +281,7 @@
         </article>
     </main>
 
-    <footer></footer>
+    <footer class="container"></footer>
 </body>
 
 </html>
