@@ -25,9 +25,19 @@
             margin-right: 20px;
         }
 
+        /*Fieldset alta*/
         fieldset {
             border: 3px solid black;
             background-color: lightgray;
+        }
+
+        /*Fieldset conacto*/
+        fieldset {
+            border: 2px solid black;
+            background-color: rgb(194, 227, 238);
+            width: 50%;
+            padding: 20px;
+            margin: 0 auto;
         }
 
         input {
@@ -63,7 +73,6 @@
             margin: 0 auto;
         }
 
-        #inicio,
         #horario,
         #entrenador,
         #contacto,
@@ -72,7 +81,6 @@
             visibility: hidden;
         }
 
-        #inicio:target,
         #horario:target,
         #entrenador:target,
         #contacto:target,
@@ -84,7 +92,7 @@
 
 <body>
     <header class="container-fluid bg-black">
-        <a href="#inicio"><img src="../img/logogif.gif" width="100%" alt="Logo GYM" /></a>
+
     </header>
 
     <nav class="container navbar navbar-expand-sm navbar-dark bg-black">
@@ -112,7 +120,7 @@
         </div>
     </nav>
 
-    <main class="container" id="inicio">
+    <main class="container">
         <article id="carousel">
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -254,7 +262,37 @@
         </article>
 
         <article id="contacto">
+            <form action="#">
+                <fieldset>
+                    <legend>Contacto</legend>
 
+                    <div class="mb-3 mt-3">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" required>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Introduzca su e-mail"
+                            name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="comment">Mensaje</label>
+                        <textarea class="form-control" id="comment" cols="30" rows="10" name="text"
+                            placeholder="Escriba aquí" required>
+                        </textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+
+                </fieldset>
+            </form>
         </article>
 
         <article id="formulario">
