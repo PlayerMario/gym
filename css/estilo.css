@@ -2,6 +2,10 @@
 
 }
 
+main {
+    margin-top: 100px;
+}
+
 .form-check {
     margin-right: 20px;
 }
@@ -22,8 +26,7 @@ fieldset {
 }
 
 input {
-    width: 15%;
-    color: lightgray;
+    color: black;
     border: 2px solid black;
 }
 
@@ -45,7 +48,7 @@ div>img {
 }
 
 #formulario {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -54,23 +57,24 @@ div>img {
 #contacto,
 #formulario {
     height: 0px;
-    visibility: hidden;
+    overflow: hidden;
 }
 
 #horario:target,
 #entrenador:target,
 #contacto:target,
 #formulario:target {
-    visibility: visible;
+    overflow: visible;
 }
 
-footer{
+footer {
     background-color: rgb(197, 195, 195);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
-footer a{
-    color: rgb(46, 46, 253);
+footer a {
+    color: black;
+    text-decoration: none;
 }
