@@ -71,9 +71,10 @@ footer {
     background-color: rgb(197, 195, 195);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 footer a {
-    color: rgb(46, 46, 253);
+    color: black;
+    text-decoration: none;
 }
