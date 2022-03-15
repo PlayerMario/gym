@@ -29,7 +29,7 @@
         margin: 0 auto;
     }
 
-    #entrenador h4 {
+    #entrenador h4, #formulario h6 {
         font-size: 1.2em;
         font-weight: bold;
     }
@@ -61,6 +61,14 @@
     #contacto button, #formulario button {
         font-size: 0.9em;
         font-weight: bold;
+    }
+
+    #contacto #email, #formulario #email, #contacto #comment {
+        font-size: 1em;
+    }
+
+    fieldset select option{
+        font-size: 0.7em;
     }
 }
 
