@@ -9,12 +9,12 @@
     }
 
     .navbar-brand img {
-        width: 40px;
+        width: 50px;
     }
 
     .d-flex button {
         font-size: 0.8em;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     #carousel {
