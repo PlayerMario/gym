@@ -4,7 +4,7 @@
         font-weight: bold;
     }
 
-    nav {
+    nav, footer {
         font-size: 0.7em;
     }
 
@@ -43,8 +43,24 @@
         font-weight: bold;
     }
 
-    footer {
+    #contacto, #formulario {
         font-size: 0.7em;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    legend {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    #contacto form fieldset, #formulario form fieldset{
+        width: 80%;
+    }
+
+    #contacto button, #formulario button {
+        font-size: 0.9em;
+        font-weight: bold;
     }
 }
 
