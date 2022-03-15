@@ -6,6 +6,11 @@
 
     nav, footer a {
         font-size: 0.7em;
+        font-weight: bold;
+    }
+
+    footer {
+        height: 120px!important;
     }
 
     .navbar-brand img {
