@@ -1,5 +1,51 @@
-@media screen {
+@media screen and (max-width: 500px) {
+    #horario{
+        font-size: 0.45em;
+        font-weight: bold;
+    }
 
+    nav {
+        font-size: 0.7em;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+    }
+
+    .d-flex button {
+        font-size: 0.8em;
+        margin-left: 10px;
+    }
+
+    #carousel {
+        margin: 0px!important;
+        width: 100%!important;
+    }
+
+    #entrenador{
+        width: 60%;
+        font-size: 0.7em;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+
+    #entrenador h4 {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    #entrenador img {
+        width: 60%;
+    }
+
+    #entrenador .btn {
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
 }
 
 main {
@@ -40,6 +86,7 @@ table {
 
 div>img {
     margin: 5px auto;
+    width: 95%;
 }
 
 #carousel {
