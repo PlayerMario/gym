@@ -4,7 +4,11 @@
         font-weight: bold;
     }
 
-    nav, footer a {
+    nav{
+        font-size: 0.9em;
+    }
+
+    footer a {
         font-size: 0.7em;
         font-weight: bold;
     }
@@ -14,7 +18,7 @@
     }
 
     .navbar-brand img {
-        width: 50px;
+        width: 60px;
     }
 
     .d-flex button {
@@ -137,6 +141,7 @@ div>img {
     overflow: hidden;
 }
 
+#inicio:target,
 #horario:target,
 #entrenador:target,
 #contacto:target,
@@ -145,10 +150,10 @@ div>img {
 }
 
 footer {
-    width: 100%;
-    height: 35px;
+    width: 85%;
+    height: 30px;
     margin: 0 auto!important;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 footer a {
