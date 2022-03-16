@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
     #horario{
-        font-size: 0.46em;
+        font-size: 0.57em;
         font-weight: bold;
     }
 
@@ -25,6 +25,9 @@
         font-size: 0.8em;
         margin-left: 5px;
         font-weight: bold;
+        position: relative;
+        left: 215px;
+        bottom: 10px;
     }
 
     #carousel {
