@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
     #horario{
-        font-size: 0.45em;
+        font-size: 0.46em;
         font-weight: bold;
     }
 
@@ -20,6 +20,7 @@
     .d-flex button {
         font-size: 0.8em;
         margin-left: 5px;
+        font-weight: bold;
     }
 
     #carousel {
