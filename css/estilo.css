@@ -85,10 +85,6 @@
     }
 }
 
-main {
-    margin-top: 100px;
-}
-
 .form-check {
     margin-right: 20px;
 }
@@ -148,12 +144,12 @@ div>img {
 #entrenador:target,
 #contacto:target,
 #formulario:target {
+    height: 100%;
     overflow: visible;
 }
 
 footer {
     width: 86%;
-    height: 30px;
     margin: 0 auto!important;
     font-size: 1em;
 }
