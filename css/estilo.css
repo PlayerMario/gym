@@ -100,7 +100,7 @@ div>img {
 }
 
 #carousel {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -126,8 +126,8 @@ div>img {
 #entrenador:target,
 #contacto:target,
 #formulario:target {
-    height: 100%;
-    overflow: visible;
+    height: 100%!important;
+    overflow: visible!important;
 }
 
 footer {
