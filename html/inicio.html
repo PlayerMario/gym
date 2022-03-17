@@ -50,7 +50,7 @@
     </nav>
 
     <main class="container pb-3">
-        <article id="carousel">
+        <article class="pt-3" id="carousel">
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
                 <!-- Indicador de posición -->
@@ -91,8 +91,8 @@
             </div>
         </article>
 
-        <article id="horario">
-            <table class="table table-hover">
+        <article class="pt-3" id="horario">
+            <table summary="Tabla de horarios de clases" class="table table-hover text-center">
                 <thead>
                     <tr>
                         <th>HORARIO</th>
@@ -156,7 +156,7 @@
             </table>
         </article>
 
-        <article class="row" id="entrenador">
+        <article class="row pt-3" id="entrenador">
             <div class="col-sm card" style="width:300px">
                 <img class="card-img-top" src="../img/viyuela.jpg" alt="Tarjeta Pepe Viyuela">
                 <div class="card-body text-center">
@@ -197,23 +197,23 @@
 
         <article id="contacto">
             <form action="#" name="Formulario de contacto" method="get">
-                <fieldset>
+                <fieldset class="border border-black-1 bg-light p-3">
                     <legend>Contacto</legend>
 
                     <div class="mb-3 mt-3">
                         <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" required>
+                        <input class="border border-black-1" type="text" name="nombre" id="nombre" required>
                     </div>
 
                     <div class="mb-3 mt-3">
                         <label for="apellidos">Apellidos</label>
-                        <input type="text" name="apellidos" id="apellidos" required>
+                        <input class="border border-black-1" type="text" name="apellidos" id="apellidos" required>
                     </div>
 
                     <div class="mb-3 mt-3">
                         <label for="email" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Introduzca su e-mail"
-                            name="email" required>
+                        <input class="border border-black-1" type="email" class="form-control" id="email"
+                            placeholder="Introduzca su e-mail" name="email" required>
                     </div>
 
                     <div>
@@ -230,54 +230,57 @@
 
         <article id="formulario">
             <form action="#" name="Formulario de alta" method="get">
-                <fieldset>
+                <fieldset class="border border-black-1 bg-light p-3">
                     <legend>Datos personales</legend>
                     <div class="mb-3 mt-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" size="30" class="form-control" id="email" placeholder="Introduzca su e-mail"
-                            name="email" required>
+                        <input class="border border-black-1" type="email" size="30" class="form-control" id="email"
+                            placeholder="Introduzca su e-mail" name="email" required>
                     </div>
 
                     <div class="d-flex flex-row">
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"
-                                required>Hombre
+                        <div class="form-check m-1">
+                            <input class="border border-black-1" type="radio" class="form-check-input" id="radio1"
+                                name="optradio" value="option1" required>Hombre
                             <label class="form-check-label" for="radio1"></label>
                         </div>
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2"
-                                required>Mujer
+                        <div class="form-check m-1">
+                            <input class="border border-black-1" type="radio" class="form-check-input" id="radio2"
+                                name="optradio" value="option2" required>Mujer
                             <label class="form-check-label" for="radio2"></label>
                         </div>
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3"
-                                required>No binario
+                        <div class="form-check m-1">
+                            <input class="border border-black-1" type="radio" class="form-check-input" id="radio3"
+                                name="optradio" value="option3" required>No binario
                             <label class="form-check-label"></label>
                         </div>
                     </div><br />
 
                     <div class="mb-3 mt-3">
                         <label for="dniNie">DNI/NIE</label>
-                        <input type="text" size="9" name="dniNie" id="dniNie" maxlength="9" minlength="9" required>
+                        <input class="border border-black-1" type="text" size="9" name="dniNie" id="dniNie"
+                            maxlength="9" minlength="9" required>
                     </div>
 
                     <div class="mb-3 mt-3">
                         <label for="fechaNac">Fecha de nacimiento</label>
-                        <input type="date" name="fechaNac" size="100" id="fechaNac" required>
+                        <input class="border border-black-1" type="date" name="fechaNac" size="100" id="fechaNac"
+                            required>
                     </div>
 
                     <div class="mb-3 mt-3">
                         <label for="lugarNac">Lugar de nacimiento</label>
-                        <input type="text" name="lugarNac" id="lugarNac" required>
+                        <input class="border border-black-1" type="text" name="lugarNac" id="lugarNac" required>
                     </div>
 
                     <div class="mb-3 mt-3">
                         <label for="telefono">Teléfono</label>
-                        <input type="text" name="telefono" id="telefono" minlength="9" maxlength="9" required>
+                        <input class="border border-black-1" type="text" name="telefono" id="telefono" minlength="9"
+                            maxlength="9" required>
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="border border-black-1 bg-light p-3">
                     <legend>Datos de pago</legend>
 
                     <h6>Tipo de pago</h6>
@@ -290,12 +293,13 @@
 
                     <div class="mb-3 mt-3">
                         <label for="titular">Titular</label>
-                        <input type="text" size="25" name="titular" id="titular" required>
+                        <input class="border border-black-1" type="text" size="25" name="titular" id="titular" required>
                     </div>
 
                     <div class="mb-3 mt-3">
                         <label for="iban">IBAN</label>
-                        <input type="text" size="24" name="iban" id="iban" minlength="24" maxlength="24" required>
+                        <input class="border border-black-1" type="text" size="24" name="iban" id="iban" minlength="24"
+                            maxlength="24" required>
                     </div>
 
                     <button type="submit" class="btn btn-success float-end mw-auto">Enviar</button>
@@ -304,12 +308,15 @@
         </article>
     </main>
 
-    <footer class="row sticky-bottom bg-secondary text-center rounded border border-1 border-dark">
-        <div class="col-sm"><a href="https://web.whatsapp.com/">683 582 691 <i class="bi bi-telephone"></i> <i
-                    class="bi bi-whatsapp"></i></a></div>
-        <div class="col-sm"><a href="https://www.instagram.com/">@gymbosco <i class="bi bi-instagram"></i></a></div>
-        <div class="col-sm"><a href="https://www.google.com/maps/">Dónde estamos <i class="bi bi-geo-alt"></i></a></div>
-        <div class="col-sm"><a href="https://mail.google.com/mail/">info@boscogym.com <i class="bi bi-envelope"></i></a>
+    <footer class="fs-6 row sticky-bottom bg-secondary text-center rounded border border-1 border-dark">
+        <div class="col-sm"><a class="text-light text-decoration-none" href="https://web.whatsapp.com/">683 582 691 <i
+                    class="bi bi-telephone"></i> <i class="bi bi-whatsapp"></i></a></div>
+        <div class="col-sm"><a class="text-light text-decoration-none" href="https://www.instagram.com/">@gymbosco <i
+                    class="bi bi-instagram"></i></a></div>
+        <div class="col-sm"><a class="text-light text-decoration-none" href="https://www.google.com/maps/">Dónde estamos
+                <i class="bi bi-geo-alt"></i></a></div>
+        <div class="col-sm"><a class="text-light text-decoration-none"
+                href="https://mail.google.com/mail/">info@boscogym.com <i class="bi bi-envelope"></i></a>
         </div>
     </footer>
 </body>

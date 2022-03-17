@@ -1,20 +1,15 @@
 @media screen and (max-width: 500px) {
-    #horario{
-        font-size: 0.57em;
-        font-weight: bold;
-    }
-
     nav{
         font-size: 0.9em;
+    }
+
+    footer {
+        height: 120px!important;
     }
 
     footer a {
         font-size: 0.7em;
         font-weight: bold;
-    }
-
-    footer {
-        height: 120px!important;
     }
 
     .navbar-brand img {
@@ -35,6 +30,11 @@
         width: 100%!important;
     }
 
+    #horario{
+        font-size: 0.57em;
+        font-weight: bold;
+    }
+
     #entrenador{
         width: 60%;
         font-size: 0.7em;
@@ -42,13 +42,13 @@
         margin: 0 auto;
     }
 
+    #entrenador img {
+        width: 60%;
+    }
+
     #entrenador h4, #formulario h6 {
         font-size: 1.2em;
         font-weight: bold;
-    }
-
-    #entrenador img {
-        width: 60%;
     }
 
     #entrenador .btn {
@@ -85,45 +85,27 @@
     }
 }
 
-.form-check {
-    margin-right: 20px;
-}
-
-/*Fieldset alta*/
 fieldset {
-    border: 3px solid black;
-    background-color: lightgray;
-}
-
-/*Fieldset contacto*/
-fieldset {
-    border: 2px solid black;
-    background-color: rgb(194, 227, 238);
     width: 35%;
-    padding: 20px;
     margin: 0 auto;
 }
 
-input {
-    color: black;
-    border: 2px solid black;
-}
-
 input:hover {
-    border: 2px solid red;
-}
-
-table {
-    text-align: center;
+    border: 2px solid black!important;
 }
 
 div>img {
-    margin: 5px auto;
     width: 90%;
+    margin: 5px auto;
 }
 
 #carousel {
     width: 70%;
+    margin: 0 auto;
+}
+
+#entrenador {
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -151,12 +133,6 @@ div>img {
 footer {
     width: 86%;
     margin: 0 auto!important;
-    font-size: 1em;
-}
-
-footer a {
-    color: lightgray;
-    text-decoration: none;
 }
 
 footer a:hover{
