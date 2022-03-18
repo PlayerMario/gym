@@ -87,7 +87,6 @@
 
 fieldset {
     width: 35%;
-    margin: 0 auto;
 }
 
 input:hover {
@@ -101,17 +100,14 @@ div>img {
 
 #carousel {
     width: 60%;
-    margin: 0 auto;
 }
 
 #entrenador {
     width: 85%;
-    margin: 0 auto;
 }
 
 #formulario {
     width: 90%;
-    margin: 0 auto;
 }
 
 #horario,
@@ -132,7 +128,6 @@ div>img {
 
 footer {
     width: 86%;
-    margin: 0 auto!important;
 }
 
 footer a:hover{
